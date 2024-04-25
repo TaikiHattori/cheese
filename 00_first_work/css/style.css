@@ -1,0 +1,998 @@
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body {
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*最上段「セカイを変えるチーズを作ろう」
+チーズ職人養成学校「チーズアカデミーFUKUOKA」
+---------------------*/
+
+.body1 {
+	width: 960px;
+}
+
+
+
+.title {
+	background: url(../img/mainbg.png);
+	background-size: cover;
+	background-position: center;
+	/* height: 500px; */
+
+	/* display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: white; */
+
+	/* ↓改造 */
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+
+}
+
+/* 改造のため消した→.title1 {
+	font-size: 48px;
+} */
+
+/* 改造のため消した→.title2 {
+	font-size: 36px
+} */
+
+
+
+
+.title_sekai {
+	font-size: 68px;
+	color: #fff;
+	z-index: 11;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+
+	animation-name: fadeInAnime;
+	/*1で解説*/
+	animation-fill-mode: backwards;
+	/*2で解説*/
+	animation-duration: 3s;
+	/*3で解説*/
+	animation-iteration-count: 2;
+	/*4で解説*/
+	animation-timing-function: ease;
+	/*5で解説*/
+	animation-delay: 0.5s;
+	/*6で解説*/
+	animation-direction: normal;
+	/*7で解説*/
+}
+
+/*1で解説*/
+@keyframes fadeInAnime {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+.title_chiizu {
+	font-size: 20px;
+	color: #fff;
+	z-index: 11;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+/* ↓改造 */
+.item2 {
+	z-index: 10;
+	opacity: 0;
+	width: 100%;
+	height: 500px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-animation: anime 30s 0s infinite;
+	animation: anime 30s 0s infinite;
+}
+
+
+.item2:nth-of-type(2) {
+	-webkit-animation-delay: 5s;
+	animation-delay: 5s;
+}
+
+.item2:nth-of-type(3) {
+	-webkit-animation-delay: 10s;
+	animation-delay: 10s;
+}
+
+
+/* ↓ふわっとアニメーション */
+@keyframes anime {
+	0% {
+		opacity: 0;
+	}
+
+	30% {
+		opacity: 1;
+	}
+
+	35% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+		z-index: 9;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes anime {
+	0% {
+		opacity: 0;
+	}
+
+	30% {
+		opacity: 1;
+	}
+
+	35% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+		z-index: 9;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: 21px;
+	height: 80px;
+	/* border-style:solid;
+	border-color:red;  
+	↑border-widthが足りんかった*/
+	border: 2px solid #efefef;
+
+	/* margin-left:300px;
+	margin-right:300px; 
+	↑なんか要らんかった*/
+
+	width: 100%;
+}
+
+
+.nav_are {
+	color: green;
+}
+
+
+
+
+
+.abauto {
+	display: flex;
+
+	justify-content: center;
+	/* ↑ここまだできてない */
+
+	align-items: center;
+	flex-direction: column;
+}
+
+.abauto_title {
+	font-size: 30px;
+	color: green;
+}
+
+
+.abauto_text {
+	font-size: 16px;
+}
+
+
+
+
+
+/* ↓改造自動スライドショーswiper ver. */
+
+.sample-slider {
+	width: 70%;
+}
+
+.sample-slider img {
+	width: 100%;
+}
+
+.sample-slider .swiper-wrapper {
+	transition-timing-function: linear;
+}
+
+
+
+
+
+
+
+
+/* 反応せず↓改造自動スライドショー */
+/* .fadeslide {
+	position: relative;
+	width: 300px;
+	height: 250px;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.fadeslide div {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.fadeslide div:nth-of-type(1) {
+	animation: fadeslide 30s 0s infinite both;
+	z-index: 6;
+}
+
+.fadeslide div:nth-of-type(2) {
+	animation: fadeslide 30s 5s infinite both;
+	z-index: 5;
+}
+
+.fadeslide div:nth-of-type(3) {
+	animation: fadeslide 30s 10s infinite both;
+	z-index: 4;
+}
+
+.fadeslide div:nth-of-type(4) {
+	animation: fadeslide 30s 15s infinite both;
+	z-index: 3;
+}
+
+.fadeslide div:nth-of-type(5) {
+	animation: fadeslide 30s 20s infinite both;
+	z-index: 2;
+}
+
+.fadeslide div:nth-of-type(6) {
+	animation: fadeslide 30s 25s infinite both;
+	z-index: 1;
+}
+
+
+
+@keyframes fadeslide {
+	0% {
+		left: 0;
+		opacity: 0;
+	}
+
+	5% {
+		left: 0;
+		opacity: 1;
+	}
+
+	20% {
+		left: 0;
+		opacity: 1;
+	}
+
+	25% {
+		left: 0;
+		opacity: 0;
+	}
+
+	26% {
+		left: 100%;
+		opacity: 0;
+	}
+
+	100% {
+		left: 100%;
+		opacity: 0;
+	}
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.kousu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.kousu_title {
+	font-size: 30px;
+	color: green;
+}
+
+
+.kousu_text {
+	font-size: 16px;
+}
+
+
+
+
+
+
+/*一旦無視 .kenshuu_title{
+	font-size:24px;
+	color:#222222;
+}
+
+.kenshuu_text{
+	font-size:16px;
+} */
+
+
+
+
+
+
+
+
+
+.kenshuu {
+	display: flex;
+	background: gainsboro;
+}
+
+.kenshuu_gazou_box {
+	width: 480px;
+}
+
+.kenshuu_text_box {
+	width: 480px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+img {
+	width: 100%;
+}
+
+.kenshuu_text {
+	width: 100%;
+	padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+.sensei {
+	display: flex;
+	background: gainsboro;
+}
+
+.sensei_text_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sensei_text {
+	width: 480px;
+	padding: 30px;
+}
+
+
+.sensei_gazou_box {
+	width: 480px;
+}
+
+img {
+	width: 80%;
+	/* ↑意味ある？ */
+}
+
+
+
+
+
+
+
+
+.sotusei {
+	display: flex;
+	background: gainsboro;
+
+}
+
+.sotusei_gazou_box {
+	width: 480px;
+}
+
+
+.sotusei_text_box {
+	width: 480px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.sotusei_text {
+	padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.nyuusu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	margin-bottom:20px;
+}
+
+
+.nyuusu_title1 {
+	color: green;
+	font-size: 30px;
+}
+
+/* .nyuusu_title2{
+	margin-bottom:10px;
+} */
+
+
+
+
+
+.nyuusu_gazou_text_oowaku {
+	display: flex;
+	/* 反応してないjustify-content:space-evenly;
+	align-items:center;
+	width:960px; */
+}
+
+
+
+
+
+.nyuusu_gazou_box1 {
+	/* width: 260px; */
+
+	/* ↓改造 */
+	position: relative;
+	width: 280px;
+	height: 170px;
+	margin: 0 auto;
+	display: block;
+	border-radius: 12px;
+	overflow: hidden;
+	cursor: pointer;
+	-webkit-transition: .6s cubic-bezier(0.34, 1.56, 0.64, 1);
+	transition: .6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.nyuusu_gazou_box1 img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 190px;
+
+	display: block;
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+
+.nyuusu_gazou_box1:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.nyuusu_gazou_box1:hover img:nth-of-type(2) {
+	opacity: 0;
+}
+
+.nyuusu_text_box1{
+	margin-top:30px;
+}
+
+
+
+
+
+
+
+.nyuusu_gazou_box2 {
+	/* width: 260px; */
+
+	/* ↓改造 */
+	position: relative;
+	width: 280px;
+	height: 170px;
+	margin: 0 auto;
+	display: block;
+	border-radius: 12px;
+	overflow: hidden;
+	cursor: pointer;
+	-webkit-transition: .6s cubic-bezier(0.34, 1.56, 0.64, 1);
+	transition: .6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.nyuusu_gazou_box2 img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:190px;
+
+	display: block;
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+
+.nyuusu_gazou_box2:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.nyuusu_gazou_box2:hover img:nth-of-type(2) {
+	opacity: 0;
+}
+
+.nyuusu_text_box2{
+	margin-top:30px;
+}
+
+
+
+.soushin{
+	margin-bottom:30px;
+}
+
+
+
+
+
+.nyuusu_gazou_box3 {
+	/* width: 260px; */
+
+	/* ↓改造 */
+	position: relative;
+	width: 280px;
+	height: 170px;
+	margin: 0 auto;
+	display: block;
+	border-radius: 12px;
+	overflow: hidden;
+	cursor: pointer;
+	-webkit-transition: .6s cubic-bezier(0.34, 1.56, 0.64, 1);
+	transition: .6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.nyuusu_gazou_box3 img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:190px;
+
+	display: block;
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+
+.nyuusu_gazou_box3:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.nyuusu_gazou_box3:hover img:nth-of-type(2) {
+	opacity: 0;
+}
+
+.nyuusu_text_box3{
+	margin-top:30px;
+}
+
+
+
+
+
+/* やはり反応せず.nyuusu_text_box1{
+	width:320px;
+}
+.nyuusu_text_box2{
+	width:320px;
+}
+.nyuusu_text_box3{
+	width:320px;
+} */
+
+
+/* 217行目ら辺のimg {
+	width: 480px;が画像2枚に対してはいい感じだが、
+	画像3枚に対しては最右画像に悪さ（はみでる）を
+	してる感じがするので、消す
+} */
+
+
+img {
+	width: 100%;
+}
+
+/* ↑反応してない */
+
+
+
+
+
+.nyuusu_gazou_text_box1 {
+	padding: 10px;
+}
+
+
+.take_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+
+.nyuusu_gazou_text_box2 {
+	padding: 10px;
+}
+
+.member_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+
+.nyuusu_gazou_text_box3 {
+	padding: 10px;
+}
+
+/* ↑paddingたち反応した */
+
+
+.AB_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+
+
+
+
+
+.moa_text {
+	font-size: 21px;
+	/* 反応せずbackground:#ffd61a; */
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.moa_box {
+	background: green;
+	width: 260px;
+	margin-left: 350px;
+}
+
+
+
+
+
+
+
+
+
+.akusesu_box_oowaku {
+	background: #fafafa;
+	height: 440px;
+	/* ↑MAILまで要るもっと縦長  */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.mappu iframe {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	aspect-ratio: 16/9;
+	/* ↑アスペクト比（縦横比）を指定 */
+
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+
+
+
+
+
+
+.kontakuto_box_oowaku {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+
+.tyosakuken {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-top:30px;
+}
+
+
+
+
+
+
+
+
+
+
+label {
+	display: block;
+	font:
+		1rem 'Fira Sans',
+		sans-serif;
+}
+
+input,
+label {
+	margin: 0.4rem 0;
+	border: 0.5px solid black;
+}
+
+.namae {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+
+.kana {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+.meado {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+/* ↓改造4.21.14:00スタート */
+
+.wave {
+	position: relative;
+	height: 200px;
+	/*何も表示されない場合は各波の親要素に高さを持たせましょう。*/
+}
+
+canvas {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+/* ↑波しようとしてJS反応せず */
+
+
+
+
+
+
+
+
+/*タブ切り替え全体のスタイル*/
+.tabs {
+	margin-top: 50px;
+	padding-bottom: 40px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	width: 957px;
+	margin: 0 auto;
+}
+
+/*タブのスタイル*/
+.tab_item {
+	width: calc(100%/3);
+	height: 50px;
+	border-bottom: 3px solid #5ab4bd;
+	background-color: #d9d9d9;
+	line-height: 50px;
+	font-size: 16px;
+	text-align: center;
+	color: #565656;
+	display: block;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	transition: all 0.2s ease;
+}
+
+.tab_item:hover {
+	opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+	display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+	display: none;
+	padding: 40px 40px 0;
+	clear: both;
+	overflow: hidden;
+
+	font-size: 25px;
+}
+
+
+/*選択されているタブのコンテンツのみを表示*/
+#abautotabu:checked~#abautotabu_content,
+#coursetabu:checked~#coursetabu_content,
+#newstabu:checked~#newstabu_content {
+	display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked+.tab_item {
+	background-color: #5ab4bd;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/

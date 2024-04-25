@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>チーズアカデミー</title>
+    <meta name="description" content=“世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。”>
+    <meta property="og:title" content="チーズアカデミー">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:site_name" content="チーズアカデミー" />
+    <meta property="og:description" content="世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="canonical" href="#">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/sanitize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- あらかじめcssを読み込んでいるので設定しなくてOK-->
+
+    <!-- ↓自動スライドショーのために追加 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+
+</head>
+
+
+<body class="body1">
+    <!-- ここから記述しよう -->
+
+    <div class="title">
+        <h1 class="title_sekai">セカイを変えるLAB10を知ろう</h1>
+        <h2 class="title_chiizu">謎の職人養成学校「あれアカデミーFUKUOKA」</h2>
+        <div class="item2" style="background-image: url(./img/negi1.jpg)"></div>
+        <div class="item2" style="background-image: url(./img/shouga1.jpg)"></div>
+        <div class="item2" style="background-image: url(./img/myouga1.jpg)"></div>
+    </div>
+
+
+
+
+    <div class="nav">
+
+        <div class="nav_are">
+            <h3>ARE ACADEMY FUKUOKA</h3>
+        </div>
+
+        <p>ABOUT</p>
+        <p>COURSE</p>
+        <p>NEWS</p>
+        <p>ACCESS</p>
+        <p>CONTACT</p>
+    </div>
+
+
+
+
+
+    <div class="tabs">
+        <input id="abautotabu" type="radio" name="tab_item" checked>
+        <label class="tab_item" for="abautotabu">ABOUT</label>
+        <input id="coursetabu" type="radio" name="tab_item">
+        <label class="tab_item" for="coursetabu">COURSE</label>
+        <input id="newstabu" type="radio" name="tab_item">
+        <label class="tab_item" for="newstabu">NEWS</label>
+        <div class="tab_content" id="abautotabu_content">
+            ABOUT箇所までご自分でスクロールをお願い致します
+        </div>
+        <div class="tab_content" id="coursetabu_content">
+            COURSE箇所までご自分でスクロールをお願い致します
+        </div>
+        <div class="tab_content" id="newstabu_content">
+            NEWS箇所までご自分でスクロールをお願い致します
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="abauto">
+            <div class="abauto_title">
+                <h2>About</h2>
+            </div>
+
+
+            <!--波をJSでつけようとした→ <div class="wave">
+            <canvas id="waveCanvas"></canvas>
+        </div> -->
+
+
+
+
+
+
+            <div class="abauto_text">
+                <p>あれアカデミーについて</p>
+                <p>あれアカデミーは，職人養成学校です．</p>
+                <p>あれの素晴らしさを，自給自足を通じて，できるだけ多くの人に知っていただきたい．そして，食卓にはいつもあれがあった，あの頃の当たり前をこの手で取り戻したい．</p>
+                <p>そんな思いから，節度のあるLAB10メンバーは，まず苦手な食べ物をこの世から徹底的に排除します．※以下参照</p>
+                <p>あれの美味しさを最大化させるために．</p>
+            </div>
+        </div>
+
+
+        <!-- ↓自動スライドショー -->
+
+
+        <div class="swiper sample-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/cacao1.jpg"></div>
+                <div class="swiper-slide"><img src="img/uri1.jpg"></div>
+                <div class="swiper-slide"><img src="img/pakuchii1.jpg"></div>
+                <div class="swiper-slide"><img src="img/wasabi1.jpg"></div>
+                <div class="swiper-slide"><img src="img/mochi1.jpg"></div>
+                <div class="swiper-slide"><img src="img/yasai1.jpg"></div>
+                <div class="swiper-slide"><img src="img/kusaya1.jpg"></div>
+
+            </div>
+
+            <div class="swiper-button-prev"></div> <!-- 追記 -->
+            <div class="swiper-button-next"></div> <!-- 追記 -->
+            <div class="swiper-pagination"></div> <!-- 追記 -->
+        </div>
+
+
+
+
+
+
+        <div class="kousu">
+            <div class="kousu_title">
+                <h2>COURSE</h2>
+            </div>
+
+            <div class="kousu_text">
+                <p>未経験からでもスタートができるよう，カリキュラムは多くの専門家や現役の職人のアドバイスのもと，作られました．</p>
+            </div>
+        </div>
+
+
+        <div class="kenshuu">
+            <div class="kenshuu_gazou_box">
+                <img src="img/about_02.jpg" alt="">
+            </div>
+
+
+            <div class="kenshuu_text_box">
+                <div class="kenshuu_text">
+                    <h2>本格的な農園を使った実地研修</h2>
+                    <p>当アカデミーでは，本格的な農園を使った実地研修を行うことができます．プロとして活躍する職人も使用するような，広大で環境も整った農園を余すところなく使い，卒業時には本格的なあれを自分の力で作れる実践力の養成を目指します．
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="sensei">
+            <div class="sensei_text_box">
+                <div class="sensei_text">
+                    <h2>必要な知識もしっかりと取得</h2>
+                    <p>料理には，しっかりとした食に関する知識が欠かせません．当アカデミーでは，一流講師陣による，料理に必要なイロハを余すところなく学べます．栄養学全般を学ぶことも可能ですので，あれ以外への展開も夢ではないでしょう．
+                    </p>
+                </div>
+            </div>
+
+            <div class="sensei_gazou_box">
+                <img src="img/course_02.jpg" alt="">
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="sotusei">
+            <div class="sotusei_gazou_box">
+                <img src="img/course_03.jpg" alt="">
+            </div>
+
+
+            <div class="sotusei_text_box">
+                <div class="sotusei_text">
+                    <h2>卒業制作はティスティング審査あり</h2>
+                    <p>当アカデミーでは最後の2ヶ月間で卒業制作を実施．卒業制作として，作品作りを実際に行います．卒業後，一般参加によるティスティング審査があるため，作り手の目線だけでなく，消費者の目線から，卒業制作作品としてのあれを，しっかりと評価いただくことができます．
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="nyuusu">
+            <div class="nyuusu_title1">
+                <h2>NEWS</h2>
+            </div>
+
+            <div class="nyuusu_title2">
+                <h2>LAB10メンバーの大好物とは...？？？</h2>
+            </div>
+        </div>
+
+
+
+
+        <div class="nyuusu_gazou_text_oowaku">
+
+            <div class="nyuusu_gazou_text_box1">
+                <div class="nyuusu_gazou_box1">
+                    <a href="">
+                        <img src="img/take1.jpg" alt="">
+                        <img src="img/chiizu1.jpg" alt="">
+                        <!-- 下側画像から上側画像へ -->
+                    </a>
+                </div>
+
+
+                <div class="nyuusu_text_box1">
+                    <div class="take_text">
+                        <h2>A</h2>
+                        <h2>take</h2>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="nyuusu_gazou_text_box2">
+                <div class="nyuusu_gazou_box2">
+                    <a href="">
+                        <img src="img/soumen1.jpg" alt="">
+                        <img src="img/chiizu1.jpg" alt="">
+                        <!-- 下側画像から上側画像へ -->
+                    </a>
+                </div>
+
+
+
+
+                <div class="nyuusu_text_box2">
+                    <div class="member_text">
+                        <h2>B</h2>
+                        <h2>member</h2>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="nyuusu_gazou_text_box3">
+                <div class="nyuusu_gazou_box3">
+
+                    <a href="">
+
+                        <img src="img/soumen_nagashi1.jpg" alt="">
+                        <img src="img/chiizu1.jpg" alt="">
+
+                    </a>
+                </div>
+
+
+                <div class="nyuusu_text_box3">
+                    <div class="AB_text">
+                        <h2>A+B</h2>
+                        <h2>!!!</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="moa_box">
+            <div class="moa_text">
+                <h2>Ware</h2>
+            </div>
+        </div>
+
+        <!-- ↑4.20.21:34スタート -->
+
+
+
+
+        <div class="akusesu_box_oowaku">
+            <h2>ACCESS</h2>
+            <h2>地図</h2>
+
+
+            <div class="mappu">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13294.877812469958!2d130.3944688!3d33.5866327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541913b55f22b4f%3A0xa430eb08ba4e0fa0!2sG&#39;s%20BASE%20FUKUOKA!5e0!3m2!1sja!2sjp!4v1713657039922!5m2!1sja!2sjp"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+
+            <p>学校名 流しそうめんアカデミーFUKUOKA</p>
+            <p>事務所所在地 〒810-0041 福岡県福岡市中央区大名1丁目3-41 プリオ大名ビル1F</p>
+            <p>TEL 754-754-0000</p>
+            <p>FAX 754-754-9999</p>
+            <p>MAIL dummy@nagashi-somen-academy.fukuoka</p>
+        </div>
+
+
+
+
+
+
+        <div class="kontakuto_box_oowaku">
+            <h2>Contact</h2>
+            <p>説明会お申し込み・お問い合わせ</p>
+            <p>ぜひ1度、竹の上を流れてみませんか。説明会は随時開催中。</p>
+            <p>その他、お問い合わせもお気軽にどうぞ。お待ちしております。</p>
+            <p>※流しそうめんアカデミーは実際には存在しません.腹は割っても竹は割らないようお願いいたします.</p>
+
+
+
+            <div class="namae">
+                <div>
+                    <label for="name">名前:</label>
+                </div>
+
+                <div>
+                    <input type="text" id="name" name="name" required minlength="4" maxlength="20" size="10" />
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="kana">
+                <div>
+                    <label for="name">カナ:</label>
+                </div>
+
+                <div>
+                    <input type="text" id="name" name="name" required minlength="4" maxlength="20" size="10" />
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="meado">
+                <div>
+                    <label for="name">メールアドレス:</label>
+                </div>
+
+                <div>
+                    <input type="text" id="name" name="name" required minlength="4" maxlength="20" size="10" />
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <p>志望動機</p>
+
+            <p>竹を割りたい</p>
+            <p>流し系企業に就職・転職したい</p>
+            <p>流しそうめんと関わる仕事をしており、仕事に生かしたい</p>
+            <p>流しの教養を身につけたい</p>
+
+
+
+            <p>詳細</p>
+
+
+
+
+
+
+            <h2 class="soushin">破竹の勢いで送信</h2>
+        </div>
+
+
+
+        <div class="nyuusu_gazou_box3">
+
+            <a href="">
+                <img src="img/lab10.jpg" alt="">
+                <img src="img/chiizu1.jpg" alt="">
+            </a>
+        </div>
+
+
+
+
+        <div class="tyosakuken">
+            <p>copyrights 2016-2024 Nagashi Somen Academy Fukuoka All RIghts Reserved.</p>
+        </div>
+
+
+
+
+
+
+        <!-- ↓swiperのjsセット完了 -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.sample-slider', {
+                loop: true,                         //ループ
+                autoplay: {                         //自動再生
+                    delay: 2000,
+                },
+                navigation: {                       //ナビゲーション（矢印）
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {                       //ページネーション（ドット）
+                    el: '.swiper-pagination',
+                },
+            })
+        </script>
+</body>
+
+</html>
